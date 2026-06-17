@@ -1,0 +1,9 @@
+.env
+.env.local
+.env.*
+dist/
+node_modules/
+workers.*.json
+workers.json
+workers.json
+*.code-workspace

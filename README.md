@@ -17,7 +17,10 @@ Notion Page A (Template)  +  Content data  →  fancyhtml  →  Vercel Blob  →
 
 ## Quick start
 
-### Setup
+### Setup (Notion Custom Agent)
+
+
+### Setup (code)
 
 ```bash
 # Install dependencies
@@ -167,8 +170,6 @@ Set these via `ntn workers env set`:
 ## Related projects
 
 - **[Inspiration Deck Slide Library](https://notion.so/)** — the template repository (Notion database)
-- **[deckformulator](https://notion.so/)** — Custom Agent that picks templates and maps content
-- **[buildDeck](https://notion.so/)** — Worker that renders DeckSpec JSON to PPTX
 
 ## Resources
 

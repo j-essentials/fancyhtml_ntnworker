@@ -167,9 +167,6 @@ Set these via `ntn workers env set`:
 - **Worker limits:** Runs on Notion's infrastructure (execution time, memory limits apply)
 - **Trusted templates:** No HTML escaping — entities must be pre-encoded in data
 
-## Related projects
-
-- **[Inspiration Deck Slide Library](https://notion.so/)** — the template repository (Notion database)
 
 ## Resources
 

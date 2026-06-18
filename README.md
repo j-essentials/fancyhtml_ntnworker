@@ -41,19 +41,24 @@ Then call it from your agent:
 
 ```javascript
 {
-  layoutPageId: "81e571cd77e144f1a823be2decbe2017",  // Library row ID
-  targetPageId: "37450e7e74098179b60ad132dfe211be",  // Where to append preview
+  layoutPageId: "abc123def456...",  // Your Library row page ID (from Inspiration Deck Slide Library)
+  targetPageId: "xyz789uvw...",     // Target page where preview gets appended
   dataJson: '{"title":"My Slide","items":[...]}',    // Slot values (JSON string)
-  filename: null                                       // Auto-generated if null
+  filename: null                     // Auto-generated if null
 }
 ```
+
+**Find your IDs:**
+- Open a Notion page → click **Share** → copy the URL
+- Page ID is the last 32 hex characters (or the UUID after the title slug)
+- Example: `https://notion.so/My-Page-abc123def456?pvs=4` → ID is `abc123def456...`
 
 **Returns:**
 ```javascript
 {
-  url: "https://blob.vercelusercontent.com/...",
-  filename: "decks/81e571cd-123456789.html",
-  slideTitle: "3-Column Funnel",
+  url: "https://blob.vercelusercontent.com/4a5b6c7d8e9f.html",  // Preview URL (unguessable)
+  filename: "decks/abc123-1718711234567.html",                  // Path used on Blob
+  slideTitle: "3-Column Funnel",                                // Template name
   access: "public",
   appendSucceeded: true,
   appendError: null
